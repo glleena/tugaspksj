@@ -53,3 +53,31 @@ Ubuntu server adalah suatu desain ubuntu yang digunakan untuk diinstall di lingk
  ## Persiapan
 
 #### 1. Langkah Instalasi Ubuntu 16.04
+1. Pilih bahasa yang digunakan
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/1.png)
+2.
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/2.png)
+3.
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/4.png)
+4.
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/5.png)
+5.
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/6.png)
+6. 
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/7.png)
+7. 
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/8.png)
+8. 
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/9.png)
+9. 
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/10.png)
+10. 
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/11.png)
+11. 
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/12.png)
+12. 
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/13.png)
+13. 
+![Hasil install 1](https://github.com/glleena/tugaspksj/blob/master/ubuntu_16/14.png)
+
+
