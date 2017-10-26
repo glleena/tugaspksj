@@ -142,26 +142,33 @@ pada tahap dibawah ini bisa saja memilih untuk langsung install SSH Server atau 
 #### Uji Penetrasi dengan Hydra
 
 kami melakukan uji penetrasi dengan menginput password yang kita input sendiri, kami menginput dengan jumlah 19 password dengan menyisipkan 1 password yang benar untuk ubuntu server
+
 ![hydra](https://github.com/glleena/tugaspksj/blob/master/hydra/3-hydra.JPG)
 
 1. Pada aplikasi hydra yang sudah berhasil di install isi pada tab target di single target menuju ip server, disini IP Server yaitu 10.151.37.57 dan ubah protocol "ssh"
+
 ![hydra](https://github.com/glleena/tugaspksj/blob/master/hydra/1-hydra.JPG)
 
 2. Pada tab Passwords isi username dengan username pada ubuntu server disini kami menamai pksj. Lalu untuk password list arahkan ke file yang berisi list-list password yang ingin dicoba untuk brute force
+
 ![hydra](https://github.com/glleena/tugaspksj/blob/master/hydra/2-hydra.JPG)
 
 3. Pada tab Tuning kita bisa set Number of Tasks sesuai keinginan kita, kami disini set 4
+
 ![hydra](https://github.com/glleena/tugaspksj/blob/master/hydra/4-hydra.JPG)
 
 4. Pada tab Start lalu klik start lalu akan muncul hasilnya
+
 ![hydra](https://github.com/glleena/tugaspksj/blob/master/hydra/5-hydra.JPG)
 ![hydra](https://github.com/glleena/tugaspksj/blob/master/hydra/hasil%20xhydra.JPG)
 
 #### Uji Penetrasi dengan Ncrack
 sama seperti hydra tetapi ncrack menggunakan terminal tidak dari aplikasi desktop
+
 ![hydra](https://github.com/glleena/tugaspksj/blob/master/ncrack/1-ncrack.JPG)
 
 hasilnya akan seperti ini
+
 ![hydra](https://github.com/glleena/tugaspksj/blob/master/ncrack/2-ncrack.JPG)
 
 ## Uji Penetrasi 2
@@ -170,22 +177,26 @@ dan Konfigurasi pada ubuntu server akan diubah dari default konfigurasinya.
 
 #### Uji Penetrasi dengan mengubah default konfigurasi
 Pada Ubuntu Server konfigurasi ssh-server dengan mengubah file sshd_config lalu menambahkan seperti gambar dibawah
+
 ![sshd](https://github.com/glleena/tugaspksj/blob/master/sshd_config/1-sshd_config.JPG)
 
 lalu restart service ssh dengan command : sudo service ssh restart
 
 Pada ubuntu desktop lakukan langkah-langkah seperti pada uji penetrasi 1 lalu akan menghasilkan seperti dibawah
+
 ![sshd](https://github.com/glleena/tugaspksj/blob/master/sshd_config/hasil%20hydra%202-sshd_config.JPG)
 
 #### Uji Penetrasi dengan menggunakan fail2ban
 Pada ubuntu server install terlebih dahulu fail2ban dengan mengetik command: sudo apt-get install fail2ban
 lalu lakukan configurasi pada fail2ban (/etc/fail2ban/jail.conf) seperti berikut
+
 ![fail2ban](https://github.com/glleena/tugaspksj/blob/master/fail2ban/1%20setting%20fail2ban.JPG)
 
 Pada ubuntu desktop lakukan langkah-langkah seperti pada uji penetrasi 1 lalu akan menghasilkan seperti dibawah
+
 ![fail2ban](https://github.com/glleena/tugaspksj/blob/master/fail2ban/2%20fail2ban%20-%20hydra%20gagal.JPG)
 
 ## Kesimpulan dan Saran
-- untuk mencegah ssh brute force dapat dilakukan beberapa hal, beberapa diantaranya adalah dengan melakukan konfigurasi pada ssh-server atau menggunakan tools untuk mencegah ssh brute-force attack seperti fail2ban.
+- untuk mencegah ssh brute force dapat dilakukan pencegahan beberapa hal, beberapa diantaranya adalah dengan melakukan konfigurasi pada ssh-server atau menggunakan tools untuk mencegah ssh brute-force attack seperti fail2ban.
 
 - dari kedua cara yang telah di lakukan, pencegahan ssh brute force attack lebih baik menggunakan tools, dikarenakan lebih bervariasinya fitur pencegahan serangan yang dapat digunakan.
